@@ -41,42 +41,21 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+             <li class="nav-item">
+              <a class="nav-link fw-bolder" href="/">BERANDA</a>
+            </li>
             <li class="nav-item">
-                <a class="nav-link fw-bolder" href="/">Home</a>
+              <a class="nav-link fw-bolder" href="about">PROFIL MAJELIS</a>
             </li>
-            <li class="nav-item dropdown">
-                <a
-                class="nav-link fw-bolder dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >
-                About
-            </a>
-            <ul
-            class="dropdown-menu"
-            aria-labelledby="navbarDropdownMenuLink"
-            >
-            <li><a class="dropdown-item" href="about">About Us</a></li>
-            <li><a class="dropdown-item" href="team">Team</a></li>
-            <li>
-                <a class="dropdown-item" href="testimonials"
-                >Testimonials</a
-                >
+            <li class="nav-item">
+              <a class="nav-link fw-bolder active" href="pengajian">JADWAL PENGAJIAN</a>
             </li>
-        </ul>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fw-bolder active" href="pengajian">Pengajian</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fw-bolder" href="galeri">Galeri</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link fw-bolder" href="contact">Contact</a>
-    </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="galeri">GALERI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="contact">KONTAK</a>
+            </li>
 </ul>
 </div>
 </div>
@@ -101,7 +80,7 @@
 <div class="pengajian bg-light py-5">
     <div class="container">
         <div class="title-container">
-            <h2 class="text-center fw-bold">PENGAJIAN</h2>
+            <h2 class="text-center fw-bold">JADWAL PENGAJIAN</h2>
         </div>
         <p class="text-center mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem modi vero voluptas ea molestias eum illo, ducimus eius quisquam repellendus accusamus rerum! Repellendus enim incidunt assumenda pariatur, quisquam eveniet numquam.</p>
         <div class="row mt-5">
@@ -194,118 +173,7 @@
 </div>
 <!-- end services -->
 
-<!-- features -->
-<div class="features mt-5 py-5">
-    <div class="container">
-        <div class="title-container">
-            <h2 class="text-center fw-bold">FEATURES</h2>
-        </div>
-        <p class="text-center mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem modi vero voluptas ea molestias eum illo, ducimus eius quisquam repellendus accusamus rerum! Repellendus enim incidunt assumenda pariatur, quisquam eveniet numquam.</p>
-        <div class="row mt-5">
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="card border-0 p-4 mt-3 shadow shadow-sm" data-aos="zoom-in">
-                    <div class="card-body d-flex justify-content-around">
-                        <i class="fa fa-book fa-lg fa-2x"></i>
-                       <h2 class="fs-5">Lorem Ipsum</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end features -->
+
 
 <!-- footer -->
 <footer>

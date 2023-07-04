@@ -50,14 +50,14 @@ class PengajianController extends Controller
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/';
-            $imageName = date('Ymd') .  "." . $image->getClientOriginalExtension();
+            $imageName = $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['image'] =  $imageName;
         }
 
         Pengajian::create($input);
 
-        return redirect('/pengajians')->with('message','Data Berhasil Ditambahkan');
+        return redirect('/admin/pengajians')->with('message','Data Berhasil Ditambahkan');
     }
 
     /**
@@ -101,7 +101,7 @@ class PengajianController extends Controller
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/';
-            $imageName = date('Ymd') .  "." . $image->getClientOriginalExtension();
+            $imageName = $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['image'] =  $imageName;
         } else {
@@ -110,7 +110,7 @@ class PengajianController extends Controller
 
         $pengajian->update($input);
 
-        return redirect('/pengajians')->with('message','Data Berhasil Diedit');
+        return redirect('/admin/pengajians')->with('message','Data Berhasil Diedit');
     }
 
     /**
@@ -123,6 +123,6 @@ class PengajianController extends Controller
     {
         //
         $pengajian->delete();
-        return redirect('/pengajians')->with('message','Data Berhasil Dihapus');
+        return redirect('/admin/pengajians')->with('message','Data Berhasil Dihapus');
     }
 }

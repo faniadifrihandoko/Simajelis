@@ -2,14 +2,26 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\Models\Galeri;
+use App\Models\Slider;
+use App\Models\Pengajian;
 
 class HomeController extends Controller
 {
     public function index()
     {
         # code...
-        return view('home.index');
+        $sliders = Slider::all();
+        $galeris = Galeri::all();
+        $pengajians = Pengajian::all();
+        
+        return view('home.index', compact(
+            'sliders',
+            'galeris',
+            'pengajians',
+        ));
     }
 
     public function about()
@@ -27,24 +39,16 @@ class HomeController extends Controller
     public function galeri()
     {
         # code...
-        return view('home.galeri');
+        $galeris = Galeri::all();
+        return view('home.galeri', compact('galeris'));
     }
 
     public function pengajian()
     {
         # code...
-        return view('home.pengajian');
+        $pengajians = Pengajian::all();
+        return view('home.pengajian', compact('pengajians'));
     }
 
-    public function team()
-    {
-        # code...
-        return view('home.team');
-    }
-
-    public function testimonials()
-    {
-        # code...
-        return view('home.testimonials');
-    }
+   
 }

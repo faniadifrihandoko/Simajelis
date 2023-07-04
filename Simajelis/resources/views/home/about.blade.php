@@ -42,40 +42,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="/">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link fw-bolder dropdown-toggle active"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                About
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="about">About Us</a></li>
-                <li><a class="dropdown-item" href="team">Team</a></li>
-                <li>
-                  <a class="dropdown-item" href="testimonials"
-                    >Testimonials</a
-                  >
-                </li>
-              </ul>
+              <a class="nav-link fw-bolder" href="/">BERANDA</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="pengajian">Pengajian</a>
+              <a class="nav-link fw-bolder active" href="about">PROFIL MAJELIS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="galeri">Galeri</a>
+              <a class="nav-link fw-bolder" href="pengajian">JADWAL PENGAJIAN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bolder" href="contact">Contact</a>
+              <a class="nav-link fw-bolder" href="galeri">GALERI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bolder" href="contact">KONTAK</a>
             </li>
           </ul>
         </div>
@@ -87,7 +66,7 @@
     <div class="breadcumbs py-2">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center text-white">
-                <h2>About</h2>
+                <h2>Profil Majelis</h2>
                 <ol class="d-flex list-unstyled">
                     <li>Home</li>
                     <li>About</li>
@@ -102,7 +81,7 @@
          <div class="row mt-5">
           <div class="col-md-6" data-aos="fade-right">
             <h3 class="fw-bold about-us-title">
-              Lorem ipsum dolor sit amet consectetur.
+              Majelis Dzikir dan Shalawat Nur Asy Syabab.
             </h3>
             <p class="fw-bolder mt-4 about-us-subtitle">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.

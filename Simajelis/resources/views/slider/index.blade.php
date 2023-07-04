@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/sliders/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/admin/sliders/create" class="btn btn-primary mb-3">Tambah Data</a>
 
     @if ($message = Session::get('message'))       
     <div class="alert alert-success">
@@ -29,6 +29,7 @@
                         $i = 1
                     @endphp
                     @foreach ($sliders as $slider)
+                    <tr>
                         <td>{{ $i++ }} </td>
                         <td> {{ $slider->title }}</td>
                         <td> {{ $slider->description }}</td>
@@ -44,6 +45,7 @@
                             <button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
                         </td>
+                    </tr>
                     @endforeach
 
                 </tbody>

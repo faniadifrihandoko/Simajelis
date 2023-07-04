@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GaleriController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PengajianController;
 use App\Http\Controllers\SliderController;
@@ -23,7 +24,11 @@ Route::post('/login', [AuthController::class, 'authenticated']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
 //Dashboard
-Route::get('/dashboard',[DashboardController::class, 'index'])->middleware('auth');
 
-Route::resource('sliders', SliderController::class)->middleware('auth');
-Route::resource('pengajians', PengajianController::class)->middleware('auth');
+Route::prefix('/admin')->middleware('auth')->group(function(){
+Route::get('/dashboard',[DashboardController::class, 'index']);
+Route::resource('sliders', SliderController::class);
+Route::resource('pengajians', PengajianController::class);
+Route::resource('galeris', GaleriController::class);
+    
+});

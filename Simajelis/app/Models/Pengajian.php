@@ -9,7 +9,7 @@ class Pengajian extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title', 'description', 'location', 'image'
+        'title', 'description', 'location', 'image',
         
     ];
 

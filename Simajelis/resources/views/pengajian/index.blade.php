@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-    <a href="/pengajians/create" class="btn btn-primary mb-3">Tambah Data</a>
+    <a href="/admin/pengajians/create" class="btn btn-primary mb-3">Tambah Data</a>
 
     @if ($message = Session::get('message'))       
     <div class="alert alert-success">
@@ -30,6 +30,7 @@
                         $i = 1
                     @endphp
                     @foreach ($pengajians as $pengajian)
+                    <tr>
                         <td>{{ $i++ }} </td>
                         <td> {{ $pengajian->title }}</td>
                         <td> {{ $pengajian->description }}</td>
@@ -46,6 +47,7 @@
                             <button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
                         </td>
+                    </tr>
                     @endforeach
 
                 </tbody>

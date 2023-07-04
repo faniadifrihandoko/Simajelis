@@ -57,7 +57,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-            <a href="/dashboard" class="nav-link">
+            <a href="/admin/dashboard" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -82,31 +82,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/sliders" class="nav-link">
+                <a href="/admin/sliders" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Slider</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/pengajians" class="nav-link">
+                <a href="/admin/pengajians" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Pengajian</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Features</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/galeri" class="nav-link">
+                <a href="/admin/galeris" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Galeri</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/clients" class="nav-link">
+                <a href="/admin/clients" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Data Clients</p>
                 </a>

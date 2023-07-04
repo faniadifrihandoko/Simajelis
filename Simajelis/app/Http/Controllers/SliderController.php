@@ -50,14 +50,14 @@ class SliderController extends Controller
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/';
-            $imageName = date('Ymd') .  "." . $image->getClientOriginalExtension();
+            $imageName = $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['image'] =  $imageName;
         }
 
         Slider::create($input);
 
-        return redirect('/sliders')->with('message','Data Berhasil Ditambahkan');
+        return redirect('/admin/sliders')->with('message','Data Berhasil Ditambahkan');
     }
 
     /**
@@ -101,7 +101,7 @@ class SliderController extends Controller
 
         if ($image = $request->file('image')) {
             $destinationPath = 'image/';
-            $imageName = date('Ymd') .  "." . $image->getClientOriginalExtension();
+            $imageName = $image->getClientOriginalName();
             $image->move($destinationPath, $imageName);
             $input['image'] =  $imageName;
         } else {
@@ -110,7 +110,7 @@ class SliderController extends Controller
 
         $slider->update($input);
 
-        return redirect('/sliders')->with('message','Data Berhasil Diedit');
+        return redirect('/admin/sliders')->with('message','Data Berhasil Diedit');
     }
 
     /**
@@ -123,6 +123,6 @@ class SliderController extends Controller
     {
         //
         $slider->delete();
-        return redirect('/sliders')->with('message','Data Berhasil Dihapus');
+        return redirect('/admin/sliders')->with('message','Data Berhasil Dihapus');
     }
 }
